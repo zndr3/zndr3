@@ -48,13 +48,13 @@ ESP32 + DHT22 + Soil Sensors + Blynk + Supabase with fuzzy logic automation.
 
 ## 🔥 Contribution Streak
 
-![GitHub Streak](https://streak-stats.demolab.com?user=YOURUSERNAME&theme=tokyonight)
+![GitHub Streak](https://streak-stats.demolab.com?user=zndr3&theme=tokyonight)
 
 ---
 
 ## 👀 Profile Visits
 
-![](https://komarev.com/ghpvc/?username=YOURUSERNAME&color=blueviolet)
+![](https://komarev.com/ghpvc/?username=zndr3&color=blueviolet)
 
 ---
 
