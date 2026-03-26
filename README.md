@@ -70,4 +70,4 @@ ESP32 + DHT22 + Soil Sensors + Blynk + Supabase with fuzzy logic automation.
 
 ## ⚡ Developer Philosophy
 
-> Build useful systems. Learn deeply. Ship professionally.
+> Build useful systems. Learn deeply. 
