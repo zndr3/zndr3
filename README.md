@@ -1,5 +1,3 @@
-## Hi there 👋
-
 <!--
 **zndr3/zndr3** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -14,3 +12,70 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+# 👋 Hi there,  I'm Zander
+
+### Computer Science Student | Python Developer | IoT Builder 
+
+I build practical systems that solve real-world problems using **Python, IoT, and automation**.
+
+- 🌱 Currently learning: Django, TensorFlow, scalable backend architecture  
+- 💡 Interested in: Agriculture tech, automation
+
+---
+
+## 🚀 Tech Stack
+
+### Languages
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+
+### Frameworks & Tools
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+---
+
+## 📌 Featured Projects
+
+### Smart Greenhouse System
+ESP32 + DHT22 + Soil Sensors + Blynk + Supabase with fuzzy logic automation.
+
+---
+
+## 📊 GitHub Stats
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOURUSERNAME&show_icons=true&theme=tokyonight)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOURUSERNAME&layout=compact&theme=tokyonight)
+
+---
+
+## 🔥 Contribution Streak
+
+![GitHub Streak](https://streak-stats.demolab.com?user=YOURUSERNAME&theme=tokyonight)
+
+---
+
+## 👀 Profile Visits
+
+![](https://komarev.com/ghpvc/?username=YOURUSERNAME&color=blueviolet)
+
+---
+
+## 📫 Connect With Me
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)](https://github.com/YOURUSERNAME)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin)](YOUR_LINKEDIN)
+
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail)](mailto:YOUR_EMAIL)
+
+---
+
+## ⚡ Developer Philosophy
+
+> Build useful systems. Learn deeply. Ship professionally.
