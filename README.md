@@ -19,7 +19,7 @@ Here are some ideas to get you started:
 
 I build practical systems that solve real-world problems using **Python, IoT, and automation**.
 
-- 🌱 Currently learning: Django, TensorFlow, scalable backend architecture  
+- 🌱 Currently learning: PostgreSQL, Django, TensorFlow, scalable backend architecture  
 - 💡 Interested in: Agriculture tech, automation
 
 ---
