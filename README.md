@@ -60,7 +60,6 @@ ESP32 + DHT22 + Soil Sensors + Blynk + Supabase with fuzzy logic automation.
 [![Brick Breaker Graph](https://github-readme-activity-graph.vercel.app/graph?username=zndr3&theme=react-dark&area=true&point=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 ### 👾 My Pacman Activity
-![Pacman Animation](https://raw.githubusercontent.com/zndr3/zndr3/output/pacman-contribution-grid.svg)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zndr3/zndr3/output/pacman-contribution-graph-dark.svg">
