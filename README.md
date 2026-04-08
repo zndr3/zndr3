@@ -50,16 +50,14 @@ ESP32 + DHT22 + Soil Sensors + Blynk + Supabase with fuzzy logic automation.
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=zndr3&theme=tokyonight)
 
-### 🐍 My GitHub Snake
+### 🐍 Snakieee
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zndr3/zndr3/output/github-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zndr3/zndr3/output/github-snake.svg">
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/zndr3/zndr3/output/github-snake-dark.svg">
 </picture>
 
-[![Brick Breaker Graph](https://github-readme-activity-graph.vercel.app/graph?username=zndr3&theme=react-dark&area=true&point=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-### 👾 My Pacman Activity
+### 👾 Pacmanny
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zndr3/zndr3/output/pacman-contribution-graph-dark.svg">
