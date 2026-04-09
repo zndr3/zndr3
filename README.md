@@ -65,6 +65,7 @@ ESP32 + DHT22 + Soil Sensors + Blynk + Supabase with fuzzy logic automation.
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/zndr3/zndr3/output/pacman-contribution-graph.svg">
 </picture>
 
+### 🧱 Bricker
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zndr3/zndr3/output/breakout-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zndr3/zndr3/output/breakout-light.svg">
