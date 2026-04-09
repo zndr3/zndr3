@@ -13,25 +13,27 @@ jobs:
     timeout-minutes: 5
 
     steps:
+      # 1. THIS IS THE MISSING STEP: It downloads your repo into the runner
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2. Generate the game files
       - name: generate SVG
         uses: cyprieng/github-breakout@v1
         with:
           github_username: ${{ github.repository_owner }}
 
+      # 3. Prepare the folder for deployment
       - name: Prepare files for deployment
         run: |
           mkdir -p dist
           cp output/light.svg dist/breakout-light.svg
           cp output/dark.svg dist/breakout-dark.svg
 
-      - name: Push to Output Branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      # 4. Deploy using the James Ives action (or crazy-max)
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          target_branch: github-breakout
-          build_dir: dist
-          clean: false  # <--- Added here to keep existing files in the branch
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          branch: github-breakout # The branch the action will deploy to.
+          folder: dist # The folder the action should deploy.
+          clean: false # Set to false so it doesn't delete existing files
