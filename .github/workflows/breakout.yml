@@ -1,24 +1,37 @@
-name: Generate Breakout
+name: generate breakout svg
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs every 24 hours
+    - cron: "0 */24 * * *"
   workflow_dispatch:
 
 jobs:
-  build:
+  generate-svg:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+
     steps:
-      - name: Generate Breakout SVG
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: generate SVG
         uses: cyprieng/github-breakout@v1
         with:
           github_username: ${{ github.repository_owner }}
-          # The SVGs will be generated in an 'output' folder
-          output_path: output
-          
-      - name: Deploy to output branch
-        uses: JamesIves/github-pages-deploy-action@v4
+
+      - name: Prepare files for deployment
+        run: |
+          mkdir -p dist
+          cp output/light.svg dist/breakout-light.svg
+          cp output/dark.svg dist/breakout-dark.svg
+
+      - name: Push to Output Branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          folder: output
-          branch: output
-          clean: false  # ✅ CRITICAL: Prevents deleting your Snake/Pacman files
+          target_branch: github-breakout
+          build_dir: dist
+          clean: false  # <--- Added here to keep existing files in the branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
