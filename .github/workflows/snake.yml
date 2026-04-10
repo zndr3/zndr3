@@ -2,25 +2,35 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 */12 * * *" # Runs every 12 hours
-  workflow_dispatch: # Allows you to run it manually from the Actions tab
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
   push:
     branches:
-      - main # Also runs whenever you push code
+      - main
 
 jobs:
   generate:
     permissions: 
-      contents: write # CRITICAL: Gives the action permission to push to your repo
+      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
     steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+
+      # --- FETCH EXISTING GAMES ---
+      - name: Checkout output branch
+        uses: actions/checkout@v4
+        with:
+          ref: output
+          path: dist
+        continue-on-error: true
+
       - name: Generate github-contribution-grid-snake.svg
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          # The new way: list all outputs here with query-string options
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
@@ -31,8 +41,8 @@ jobs:
       - name: Push to Output Branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: output # Saves the images to a separate branch to keep 'main' clean
-          clean: false  
+          target_branch: output
           build_dir: dist
+          clean: true # Safe because 'dist' now contains everything
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
