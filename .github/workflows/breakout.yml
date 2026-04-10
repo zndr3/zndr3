@@ -16,27 +16,33 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      # This step is the "Database Connection" of GitHub Actions
-      - name: Checkout repository
+      - name: Checkout main
         uses: actions/checkout@v4
+
+      # --- FETCH EXISTING GAMES ---
+      - name: Checkout output branch
+        uses: actions/checkout@v4
+        with:
+          ref: output
+          path: dist
+        continue-on-error: true
 
       - name: generate SVG
         uses: cyprieng/github-breakout@v1
         with:
           github_username: ${{ github.repository_owner }}
 
-      # We move the outputs to 'dist' just like the Snake workflow does
       - name: Prepare files for deployment
         run: |
-          mkdir -p dist
+          # Copy new breakout files into the 'dist' folder that has the other games
           cp output/light.svg dist/breakout-light.svg
           cp output/dark.svg dist/breakout-dark.svg
 
       - name: Push to Output Branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: output # Both games now live on the 'output' branch
+          target_branch: output
           build_dir: dist
-          clean: false # Important: Keeps your Snake files and Breakout files together
+          clean: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
